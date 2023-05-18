@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!--name of the page-->
+	<title>CSA | perfume wholesale</title>
+	
+	<!--webpage header icon-->
+	<link rel="icon" href="logo.png"/>
+	
+	<!--meta tag-->
+	<meta charset="utf-8" />
+	
+	<!--main page layout stylesheet link-->
+	<link rel="stylesheet" href="layout.css" />
+	
+	<!--main navigation stylesheet link-->
+	<link rel="stylesheet" href="mainnav.css" />
+	
+	<!--feedback form javascript-->
+	<script src="Feedback.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- enclosing all elements of the webpage-->
+<div id="wrapper">
+
+	<!-- main header/name of the webpage-->
+	<header>
+			<img src="logo2.jpg" alt="company logo" style="width:120px;height:90px;" />
+			<img id="tel" src="tel.jpg" alt="phone logo"/>
+			<h5 id="number" >02086798454</h5>
+	</header>
+	
+	<!-- main navigation buttons of the webpage-->
+	<nav id="main_nav">
+		<ul id="ul_main">
+			<li class="li_main">
+			<!-- hyperlinks to specefic pages-->
+			<a class="hyper_main" title="Navigate to Homepage" href="index.html">| HOME |</a>
+			</li>
+			<li class="li_main">
+			<a class="hyper_main" title="Navigate to Mens page" href="mens.html">| MENS |</a>
+			</li>
+			<li class="li_main">
+			<a class="hyper_main" title="Navigate to Womens page" href="womens.html">| WOMENS |</a>
+			</li>
+			<li class="li_main">
+			<a class="hyper_main" title="Navigate to Gifts page" href="giftpack.html">| GIFTS |</a>
+			</li>
+			<li class="li_main">
+			<a class="hyper_main" title="Navigate to Offers page" href="offers.html">| OFFERS |</a>
+			</li>
+			<li class="li_main">
+			<a class="hyper_main" title="Navigate to Contact Us" href="contact.html">| CONTACT US |</a>
+			</li>
+		</ul>
+	</nav>
+	
+<!-- main body section of the webpage-->	
+<main>
+
+	<!-- location map-->
+	<div class="map">
+			<img src="map.jpg" alt="location map" style="width:500px;height:500px;" />
+	</div>
+	
+	<!--information section-->
+	<div class="mform"><h3><i>Please fill in feedback form</i></h3></div>
+	
+<!--feedback form-->
+<div class="feedback">
+<form action="mailto:wholesale@csa.com"
+	method="post"
+	name="form"
+	onsubmit="return checkData()" >
+
+	Your Name:<br>
+	<input name="NAME" type="text" pattern="[A-Za-z]{3,}"required title="At least 5 characters"/> 
+
+	<br /><br />
+	
+	Contact Number:
+	<input name="PHONE" type="tel" pattern=".{9,}" required title="At least 9 characters"/>
+	<br /><br />
+		
+	Email:<br>
+	<input name="EMAIL" type="email" />
+	<br /><br />
+	
+	Your Name:<br>
+	<input name="COMPANYNAME" type="text" pattern=".{5,}" required title="At least 5 characters"/> 
+		
+	
+	Enquiry:<br>
+	<textarea name="ENQUIRY" rows="5"></textarea>
+	<br /><br />
+		
+	<input type="submit" value="Send Message" />
+
+</form>
+</div>
+
+	<!--container for contact information-->
+	<div class="contactcontainer">
+		<div class="site_address">
+				<h2>Our Location:</h2>
+				<h3>51 Mansell Road<br>
+				Greenford<br>
+				London<br>
+				UB3 4NP<br></h3>
+		</div>
+		
+		<div class="opening_hours">
+				<h2>Opening Hours:</h2>
+				<h3>Mon-Fri: 7am-6pm<br>
+				Sat:8am-5pm<br>
+				Sun:9am-12pm<br></h3>
+				
+		</div>
+	</div>
+	
+	<!--container for telephone information-->
+	<div class="telcontainer">
+		<div class="tel_numbers">
+			</div>
+				<h3>Contact Numbers:</h3>
+				<h4>Sales Enquiries:&nbsp; 02086798454</h4>
+				<h4>Return Enquiries:&nbsp; 02086798000</h4>
+				<h4>General Enquiries:&nbsp; 02086794500</h4>
+	</div>
+
+<!-- closing main body section-->	
+</main>
+
+	<!--footer of the webpage-->
+	<footer>
+		<h4> &copy; CSA|| Allrights Reserved</h4>
+	<!-- closing footer-->
+	</footer>
+
+</div>
+
+</body>
+</html>
