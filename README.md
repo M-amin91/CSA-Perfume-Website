@@ -1,4 +1,4 @@
-# Perfume Wholesale Website
+# Perfume Website
 ## Description
 A website I created for a wholesale retailer which sells perfumes in bulk order. I have created this website from HTML and CSS. The website does not place orders but a contact form has been created which allows the customer to contact the retailer to enquire or purchase an order 
 ## Instruction
